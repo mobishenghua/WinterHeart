@@ -1,0 +1,28 @@
+.myButton {
+  width: 250px;
+  height: 50px;
+  left:25px;
+  /*display:block;*/
+  margin:0 auto;
+  margin-top: 49rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+    border: 2px solid #8AC007;
+    padding: 0px 20px;
+    width: 200px;
+    height: 50px;
+    text-align: center !important;
+}
+.page-section-demo {
+  display: flex;
+  justify-content: space-around;
+}
+.image {
+  margin-top: 20rpx;
+  width: 175px;
+  height: 175px;
+  border-radius: 25px;
+    
+}

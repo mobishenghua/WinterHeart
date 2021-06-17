@@ -1,0 +1,31 @@
+<view class="outer">
+  
+
+<view>
+<view class='textT'>
+  正在和冰墩墩对战！
+</view>
+
+
+<view class='textQ'>
+  {{list[qNumber-1].question}}
+</view>
+
+<button class="myButton" type="primary" onTap="chooseA">A.{{list[qNumber-1].a}}</button>
+<button class="myButton" type="primary" onTap="chooseB">B.{{list[qNumber-1].b}}</button>
+<button class="myButton" type="primary" onTap="chooseC">C.{{list[qNumber-1].c}}</button>
+<button class="myButton" type="primary" onTap="chooseD">D.{{list[qNumber-1].d}}</button>
+
+<view class='textS'>
+  得分：{{cNumber}}
+</view>
+<view class='textS'>
+  冰墩墩得分：{{lNumber}}
+</view>
+
+</view>
+
+<progress class='progress' percent="{{qNumber*20-20}}" active/>
+
+
+</view>

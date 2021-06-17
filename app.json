@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/indexzzx/indexzzx",
+    "pages/index/index",
+    "pages/index/collect/collect",
+    "pages/indexyyh/indexyyh",
+    "pages/indexyyh/answer1/answer1",
+    "pages/indexyyh/answer2/answer2",
+    "pages/indexzzx/winterolympics/winterolympics"
+  ],
+  "window": {
+    "defaultTitle": "冬奥知新",
+    "titleBarColor": "#87CEFA",
+    "pullRefresh": true
+  },
+  "tabBar": {
+    "textColor": "#ffffff",
+    "selectedcolor":"#001100",
+    "backgroundColor": "#87CEFA",
+    "items": [
+      {
+        "pagePath": "pages/indexzzx/indexzzx",
+        "name": "知新",
+        "activeIcon": "icon/icon4.png",
+        "icon": "icon/_icon4.png"
+      },
+      {
+        "pagePath": "pages/indexyyh/indexyyh",
+        "name": "游戏",
+        "activeIcon": "icon/icon2.png",
+        "icon": "icon/_icon2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "name": "成就",
+        "activeIcon": "icon/icon3.png",
+        "icon": "icon/_icon3.png"
+      }
+    ]
+  }
+}

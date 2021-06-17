@@ -1,0 +1,13 @@
+{
+  "current": null,
+  "modes": [
+    {
+      "title": "yyh",
+      "page": "pages/indexyyh/answer1/answer1"
+    },
+    {
+      "title": "ryh",
+      "page": "pages/index/index"
+    }
+  ]
+}

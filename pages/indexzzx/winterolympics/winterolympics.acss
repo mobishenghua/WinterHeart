@@ -1,0 +1,130 @@
+page{ 
+  height:calc(100vh);
+  /*背景颜色*/ 
+  background: rgba(102,204,255,0.3); 
+  /*字体颜色*/
+  color: #000; 
+  /*元素超出边界的处理方式*/
+  overflow: auto;
+  /*规定元素位置*/
+  position: relative;
+}
+
+.mytext{
+  font-size: 20px;
+  color:#000;
+  font-family: Microsoft YaHei;
+  font-weight: bolder;
+   position: absolute;
+   top:20rpx;
+   left:20rpx;
+   z-index:0;
+   opacity: 0.6;
+}
+
+.mytest{
+   position: absolute;
+   top:0rpx;
+   left:0rpx;
+   width:100%;
+   height:100%;
+   z-index:-1;
+   opacity: 0.6;
+}
+
+
+.column{ 
+  flex-direction: column; 
+}
+
+/* 滑动区域 */
+swiper, .swiper,.swiper-item{
+  width: 100%;  
+  height: 100%; 
+  text-align: left;
+  position:relative;
+}
+.boxItem{ 
+  display: flex; 
+  vertical-align: center; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;  
+  height: 100%;  
+  padding: 40rpx 100rpx; 
+  overflow-wrap: break-word; 
+  word-wrap: break-word; 
+  overflow: hidden; 
+}
+
+.flipGroup{ 
+  width: 600rpx; 
+  height: 897rpx; 
+  perspective: 3000rpx;
+}
+.flipBox{ 
+  width:100%; 
+  height:100%; 
+  backface-visibility:hidden; 
+  transition: all 1s ease; 
+  transform-style: preserve-3d; 
+}
+.sideWrap{ 
+  width:100%; 
+  height:100%; 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  border-radius: 10rpx; 
+  overflow: scroll; 
+}
+.sideWrap.front{ 
+  background:#fff;
+  border: #00ccff 20rpx solid;  
+}
+
+.posterGroup{ width: 100%; height: 100%; text-align:left; padding: 0rpx; border-radius: 8rpx; background: #fff; overflow: scroll; }
+.posterGroup .title{ 
+  position: absolute; 
+  top:0; 
+  left: 0; 
+  padding: 40rpx; 
+  text-align: left;
+  font-size: 25px; 
+  font-weight: bolder;
+  width: 100%; 
+  overflow: hidden; 
+}
+.posterGroup .content{ 
+  position: absolute; 
+  top:80rpx; 
+  left: 0; 
+  padding: 40rpx; 
+  text-align: left;
+  width: 100%; 
+  overflow: hidden;
+  text-indent: 5px; 
+}
+
+
+.themetext{
+  text-align: right;
+  color: aquamarine;
+  font-size: 20px;
+}
+
+button {  
+  
+        background-color: #428bca;  
+        border-color: #357ebd;  
+        color: #fff;  
+        -moz-border-radius: 10px;  
+        -webkit-border-radius: 10px;  
+        border-radius: 10px; /* future proofing */  
+        -khtml-border-radius: 10px; /* for old Konqueror browsers */  
+        text-align: center;  
+        vertical-align: middle;  
+        border: 1px solid transparent;  
+        font-weight: 900;  
+        font-size:125%  
+      } 

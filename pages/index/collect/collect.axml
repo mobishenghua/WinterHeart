@@ -1,0 +1,63 @@
+<view class="swiper">
+<image class='mytest'  src='{{ bannerData[bannerCurrent].img }}' mode="aspectFill"></image>
+  <swiper previous-margin="30rpx" next-margin="30rpx" indicator-dots="true" onChange="bannerSwiper" indicator-color="rgba(159,95,159,0.5)" current="0">
+        <swiper-item a:for="{{bannerData}}" a:key="{{index}}">
+          <view class="swiper-item">
+            <view class='boxItem column'>
+              <!-- 卡牌 -->
+              <view class="flipGroup" data-index='{{ index }}'>
+                <view class="flipBox">
+                  <!-- 卡面内容 -->
+                  <view class="sideWrap front">
+                    <!-- 卡片内容写在下方 -->
+<!--页面框架-->
+<view class="posterGroup">
+<view class="imgWrap">
+  
+<image class="img" src="{{ item.img }}" mode="aspectFill"></image>
+<view class="detailBox" >
+
+<!--国家-->
+<view >
+{{ item.country }}  
+</view>
+
+<!--地区-->
+<view >
+ {{ item.local }} 
+</view>
+
+<!--举办时间-->
+<view >
+ {{ item.time }} 
+</view>
+
+<!--口号-->
+<view class="themetext">
+ {{ item.theme }} 
+</view>
+
+<!--开始学习的按钮-->
+<view>
+  <button type="primary" onTap="get">
+  设为展示图片
+  </button>
+</view>
+
+</view>
+
+
+</view>
+
+
+</view>
+
+
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>        
+    </swiper>
+  </view>

@@ -1,0 +1,48 @@
+<view class="swiper">
+<image class='mytest'  src='{{ poster[shownumber].img  }}'></image>
+  <swiper previous-margin="30rpx" next-margin="30rpx" indicator-dots="true" onChange="bannerSwiper" indicator-color="rgba(159,95,159,0.5)">
+        <swiper-item a:for="{{bannerData}}" a:key="{{index}}">
+          <view class="swiper-item">
+            <view class='boxItem column'>
+              <!-- 卡牌 -->
+              <view class="flipGroup" data-index='{{ index }}'>
+                <view class="flipBox">
+                  <!-- 卡面内容 -->
+                  <view class="sideWrap front">
+                    <!-- 卡片内容写在下方 -->
+<!--页面框架-->
+<view class="posterGroup">
+<view class="imgWrap">
+<view>
+  <!--标题-->
+<view class="title">
+{{ item.title }}  
+</view>
+
+<!--内容-->
+
+<view class="content">
+<text decode="{{true}}">{{ item.content[shownumber] }}</text>
+</view>
+</view>
+
+
+</view>
+</view>
+
+
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>        
+    </swiper>
+  </view>
+
+  
+
+
+
+
+

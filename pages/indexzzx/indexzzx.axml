@@ -1,0 +1,68 @@
+<view class="swiper" a:if="{{loadingHidden}}">
+<text class='mytext'>{{name}},欢迎回来!</text>
+<image class='mytest'  src='{{ bannerData[bannerCurrent].img }}'></image>
+  <swiper previous-margin="30rpx" next-margin="30rpx" indicator-dots="true" onChange="bannerSwiper" indicator-color="rgba(159,95,159,0.5)" current="1">
+        <swiper-item a:for="{{bannerData}}" a:key="{{index}}">
+          <view class="swiper-item">
+            <view class='boxItem column'>
+              <!-- 卡牌 -->
+              <view class="flipGroup" data-index='{{ index }}'>
+                <view class="flipBox">
+                  <!-- 卡面内容 -->
+                  <view class="sideWrap front">
+                    <!-- 卡片内容写在下方 -->
+<!--页面框架-->
+<view class="posterGroup">
+<view class="imgWrap">
+  
+<image class="img" src="{{ item.img }}" mode="aspectFill"></image>
+<view class="detailBox" >
+
+<!--国家-->
+<view style="font-size:30px; font-weight:bold">
+{{ item.country }}
+<text style="font-size:20px">•{{ item.local }}冬奥会 </text>
+</view>
+
+
+<!--举办时间-->
+<view  class="timetext"> 
+ {{ item.time }} 
+</view>
+
+<!--口号-->
+<view class="themetext">
+ {{ item.theme }} 
+</view>
+
+<!--开始学习的按钮-->
+<view>
+  <button type="primary" onTap="get">
+  开始学习
+  </button>
+</view>
+
+</view>
+
+
+</view>
+
+
+</view>
+
+
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>        
+    </swiper>
+  </view>
+
+  
+
+
+
+
+

@@ -1,0 +1,11 @@
+<view class='page-section-demo'>
+  <image class='image'src='https://img0.baidu.com/it/u=242490024,324608397&fm=26&fmt=auto&gp=0.jpg'/ onTap="show1">
+</view>
+
+<button class='myButton' type="primary" onTap="openAnswer1">和冰墩墩对战</button>
+
+<view class='page-section-demo'>
+  <image class='image'src='http://qqpublic.qpic.cn/qq_public/0/0-2901836086-D34A1952BA3098DEA2E1C86F3F6CECD6/0?fmt=jpg&size=24&h=717&w=591&ppv=1/0'/ onTap="show2">
+</view>
+
+<button class='myButton' type="primary" onTap="openAnswer2">和雪容融对战</button>
